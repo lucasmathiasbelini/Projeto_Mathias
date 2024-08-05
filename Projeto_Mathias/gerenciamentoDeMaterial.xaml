@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projeto_novo_zipe-2.gerenciamentoDeMaterial"
+             Title="Gerenciamento de fornecedor">
+
+    <StackLayout Padding="20">
+
+        <!-- Title -->
+        <Label Text="Gerenciamento de fornecedor"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <!-- Dropdown for nome -->
+        <Picker x:Name="NomePicker"
+                Title="nome"
+                VerticalOptions="Start" />
+
+        <!-- Label for Materiais fornecidos -->
+        <Label Text="Materiais fornecidos"
+               FontSize="18"
+               VerticalOptions="Start"
+               Margin="0,20,0,0" />
+
+        <!-- List of materials -->
+        <StackLayout BackgroundColor="White"
+                     Padding="10"
+                     VerticalOptions="Start">
+            <Label Text="Material 1" />
+            <Label Text="Material 2" />
+            <Label Text="Material 3" />
+            <Label Text="Material 4" />
+        </StackLayout>
+
+        <!-- Buttons at the bottom -->
+        <Grid RowDefinitions="Auto" ColumnDefinitions="*, *" VerticalOptions="EndAndExpand">
+            <!-- Desativar fornecedor button -->
+            <Button Text="Desativar fornecedor"
+                    ImageSource="delete_icon.png"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    VerticalOptions="End"
+                    HorizontalOptions="Start" />
+            
+            <!-- Confirmar button -->
+            <Button Text="Confirmar"
+                    VerticalOptions="End"
+                    HorizontalOptions="Center" />
+
+            <!-- Editar materiais link -->
+            <Button Text="editar materiais"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    Clicked="OnEditarMateriaisClicked" />
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
