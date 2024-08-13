@@ -2,7 +2,7 @@ using Microsoft.Maui.Controls;
 
 namespace Projeto_Mathias
 {
-    public partial class Projeto_Mathias: ContentPage
+    public partial class FornecedorPage: ContentPage
     {
         public FornecedorPage()
         {
