@@ -1,8 +1,8 @@
 using Microsoft.Maui.Controls;
 
-namespace projeto_novo_zipe_2
+namespace Projeto_Mathias
 {
-    public partial class FornecedorPage : ContentPage
+    public partial class Projeto_Mathias: ContentPage
     {
         public FornecedorPage()
         {

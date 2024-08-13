@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projeto_novo_zipe-2.gerenciamentoDeFornecedor"
+             x:Class="Projeto_Mathias.gerenciamentoDeFornecedor"
              Title="Gerenciamento de fornecedor">
 
     <StackLayout Padding="20">
