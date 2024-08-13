@@ -4,34 +4,72 @@
              x:Class="Projeto_Mathias.gerenciamentoEstoque"
              Title="Main Page">
 
-    <Grid RowDefinitions="Auto, *" ColumnDefinitions="2*, 3*">
+    <Grid RowDefinitions="Auto, *"
+            ColumnDefinitions="2*, 3*">
 
         <!-- Menu buttons on the left -->
-        <StackLayout Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Spacing="20" VerticalOptions="Start">
-            <Button Text="Gerenciamento de fornecedor" Clicked="OnGerenciamentoFornecedorClicked" />
-            <Button Text="Gerenciamento de matérias" Clicked="OnGerenciamentoMateriasClicked" />
-            <Button Text="Gerenciamento de estoque" Clicked="OnGerenciamentoEstoqueClicked" />
+        <StackLayout Grid.Row="0"
+                Grid.Column="0"
+                Grid.RowSpan="2"
+                Spacing="20"
+                VerticalOptions="Start">
+            <Button Text="Gerenciamento de fornecedor"
+                    Clicked="OnGerenciamentoFornecedorClicked"/>
+            <Button Text="Gerenciamento de matérias"
+                    Clicked="OnGerenciamentoMateriasClicked"/>
+            <Button Text="Gerenciamento de estoque"
+                    Clicked="OnGerenciamentoEstoqueClicked"/>
         </StackLayout>
 
         <!-- Gerenciamento de fornecedor section -->
-        <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="#444444" Padding="20" x:Name="FornecedorSection" IsVisible="True">
-            <Label Text="Gerenciamento de fornecedor" FontSize="24" TextColor="White" HorizontalOptions="Center"/>
-            <StackLayout Spacing="10" VerticalOptions="Start">
-                <Label Text="Histórico de movimentação" TextColor="White"/>
-                <Label Text="Estoque mínimo" TextColor="White"/>
+        <StackLayout Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="#444444"
+                Padding="20"
+                x:Name="FornecedorSection"
+                IsVisible="True">
+            <Label Text="Gerenciamento de fornecedor"
+                    FontSize="24"
+                    TextColor="White"
+                    HorizontalOptions="Center"/>
+            <StackLayout Spacing="10"
+                    VerticalOptions="Start">
+                <Label Text="Histórico de movimentação"
+                        TextColor="White"/> 
+                <Label Text="Estoque mínimo"
+                        TextColor="White"/>
             </StackLayout>
-            <Button Text="Salvar" BackgroundColor="#0000FF" TextColor="White" VerticalOptions="End"/>
+            <Button Text="Salvar"
+                    BackgroundColor="#0000FF"
+                    TextColor="White"
+                    VerticalOptions="End"/>
         </StackLayout>
 
         <!-- Gerenciamento de matérias section -->
-        <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="#444444" Padding="20" x:Name="MateriasSection" IsVisible="False">
-            <Label Text="Gerenciamento de matérias" FontSize="24" TextColor="White" HorizontalOptions="Center"/>
+        <StackLayout Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="#444444"
+                Padding="20"
+                x:Name="MateriasSection"
+                IsVisible="False">
+            <Label Text="Gerenciamento de matérias"
+                    FontSize="24"
+                    TextColor="White"
+                    HorizontalOptions="Center"/>
             <!-- Add your contents for Materias section here -->
         </StackLayout>
 
         <!-- Gerenciamento de estoque section -->
-        <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="#444444" Padding="20" x:Name="EstoqueSection" IsVisible="False">
-            <Label Text="Gerenciamento de estoque" FontSize="24" TextColor="White" HorizontalOptions="Center"/>
+        <StackLayout Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="#444444"
+                Padding="20"
+                x:Name="EstoqueSection"
+                IsVisible="False">
+            <Label Text="Gerenciamento de estoque"
+                    FontSize="24"
+                    TextColor="White"
+                    HorizontalOptions="Center"/>
             <!-- Add your contents for Estoque section here -->
         </StackLayout>
 

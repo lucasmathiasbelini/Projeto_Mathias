@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Mathias.CadastroFornecedorPage"
+             Title="Cadastro de Fornecedor">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <Label Text="Cadastro de Fornecedor"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="NomeEmpresaEntry"
+                   Placeholder="Nome/empresa" />
+
+            <Entry x:Name="CNPJEntry"
+                   Placeholder="CNPJ"
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="DepartamentoEntry"
+                   Placeholder="Departamento" />
+
+            <Entry x:Name="PaisEntry"
+                   Placeholder="País" />
+
+            <Entry x:Name="CidadeEntry"
+                   Placeholder="Cidade" />
+
+            <Entry x:Name="CEPEntry"
+                   Placeholder="CEP"
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="TelefoneEntry"
+                   Placeholder="Telefone"
+                   Keyboard="Telephone" />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button Text="Cadastrar-se" Clicked="OnCadastrarClicked" />
+                <Button Text="Voltar à tela" Clicked="OnVoltarClicked" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

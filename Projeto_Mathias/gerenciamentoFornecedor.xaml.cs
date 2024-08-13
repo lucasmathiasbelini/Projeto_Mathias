@@ -1,4 +1,4 @@
-public class gerenciamentofornecedor{
+public class gerenciamentoFornecedor{
 
 String criterioselecao;
 int id;
@@ -25,7 +25,7 @@ public string Getemail(string email){
 
 ///*****************************************************************************************///
 
-public void Setavaliacaodesempenho(string avaliacaodesempenho){
+public string Setavaliacaodesempenho(string avaliacaodesempenho){
 
 this.avaliacaodesempenho = avaliacaodesempenho;
 
@@ -33,12 +33,12 @@ this.avaliacaodesempenho = avaliacaodesempenho;
 ///******************************************************************************************///
 
 public void Getavaliacaodesempenho(string avaliacaodesempenho){
- 
+ return avaliacaodesempenho;
 }
-public string Getanalisar(string analisar){
+public void Getanalisar(string analisar){
     return analisar;
 }
-public void Setanalisar(){
+public string Setanalisar(){
     this.analisar=analisar;
 }
 }
