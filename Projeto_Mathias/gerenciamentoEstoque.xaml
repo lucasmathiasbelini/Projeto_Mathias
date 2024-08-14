@@ -56,7 +56,7 @@
                     FontSize="24"
                     TextColor="White"
                     HorizontalOptions="Center"/>
-            <!-- Add your contents for Materias section here -->
+        <!-- Add your contents for Materias section here -->
         </StackLayout>
 
         <!-- Gerenciamento de estoque section -->

@@ -1,7 +1,7 @@
 using LiteDB;
 using Projeto_Mathias.Modelos;
 
-namespace Projeto_Mathias.Controles;
+namespace Controles;
 
 public class BaseControle
 {
