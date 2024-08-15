@@ -1,5 +1,9 @@
+using System;
+using Microsoft.Maui.Controls;
+
 namespace Projeto_Mathias;
-public class GerenciamentoFornecedor {
+public partial class GerenciamentoDeFornecedor : ContentPage
+{
 
     // Variáveis da classe
     String criterioSelecao;
@@ -7,49 +11,69 @@ public class GerenciamentoFornecedor {
     String avaliacaoDesempenho;
     String analisar;
 
+    public GerenciamentoDeFornecedor()
+    {
+        InitializeComponent();
+
+    }
+
     ///*****************************************************************************************///
     /// <summary> Classe para definir o email </summary>
-    public void setEmail(String email) {
+    public void setEmail(String email)
+    {
         this.criterioSelecao = email;  // Corrigi a atribuição para o email
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para definir o ID </summary>
-    public void setId(int id) {
+    public void setId(int id)
+    {
         this.id = id;
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para obter o email </summary>
-    public String getEmail() {
+    public String getEmail()
+    {
         return this.criterioSelecao;  // Ajustado para retornar o email correto
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para definir a avaliação de desempenho </summary>
-    public void setAvaliacaoDesempenho(String avaliacaoDesempenho) {
+    public void setAvaliacaoDesempenho(String avaliacaoDesempenho)
+    {
         this.avaliacaoDesempenho = avaliacaoDesempenho;
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para obter a avaliação de desempenho </summary>
-    public String getAvaliacaoDesempenho() {
+    public String getAvaliacaoDesempenho()
+    {
         return this.avaliacaoDesempenho;
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para definir a análise </summary>
-    public void setAnalisar(String analisar) {
+    public void setAnalisar(String analisar)
+    {
         this.analisar = analisar;
     }
 
     ///*****************************************************************************************///
     /// <summary> Classe para obter a análise </summary>
-    public String getAnalisar() {
+    public String getAnalisar()
+    {
         return this.analisar;
     }
-    private void OnEditarMateriaisClicked(object sender, EventArgs args) {
 
+    private void OnGerenciamentoFornecedorClicked(object sender, EventArgs args)
+    {
+        Application.Current.MainPage = new MainPage();
+    }
+
+    private void OnEditarMateriaisClicked(object sender, EventArgs args)
+    {
+        Application.Current.MainPage = new MainPage();
     }
 
 }

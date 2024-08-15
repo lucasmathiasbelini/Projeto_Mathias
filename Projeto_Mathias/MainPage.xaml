@@ -3,5 +3,104 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto_Mathias.MainPage">
 
-   
+    <Grid>
+     
+        <!-- Define Rows and Columns -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Button Background="#1B2EA8"
+                TextColor="White"
+                Text="Cadastro fornecedor"
+                Grid.Column="3"
+                Grid.Row="0"
+                Margin="30"
+                Clicked="OnMenuClicked"
+                FontFamily="sans serif"
+                HeightRequest="50"
+                WidthRequest="300"
+                CornerRadius="30"
+                
+                />
+               
+        <Button Background="#1B2EA8"
+                TextColor="White"
+                Grid.Column="2"
+                Text="Login"
+                Grid.Row="1"
+                Margin="30"
+                Clicked="OnLoginClicked"
+                FontFamily="sans serif"
+                 HeightRequest="50"
+                WidthRequest="300"
+                 CornerRadius="30"
+                />
+
+        <Button Background="#1B2EA8"
+                TextColor="White"
+                Grid.Column="4"
+                Text="Gerenciamento fornecedor"
+                Grid.Row="2"
+                Margin="30"
+                Clicked="OnCadastroClicked"
+                FontFamily="sans serif"
+                 HeightRequest="50"
+                WidthRequest="300"
+                 CornerRadius="30"
+                />
+
+        <Button Background="#1B2EA8"
+                TextColor="White"
+                Grid.Column="0"
+                Text="Tela Inicial"
+                Grid.Row="4"
+                Margin="30"
+                Clicked="OnTelaInicialClicked"
+                FontFamily="sans serif"
+                 HeightRequest="50"
+                WidthRequest="300"
+                 CornerRadius="30"
+                />
+
+        <Button Background="#1B2EA8"
+                TextColor="White"
+                Grid.Column="1"
+                Text="Adicionar Dívidas"
+                Grid.Row="5"
+                Margin="30"
+                Clicked="OnAdicionarDividasClicked"
+                FontFamily="sans serif"
+                 HeightRequest="50"
+                WidthRequest="300"
+                 CornerRadius="30"
+                />
+        
+        <Button 
+                Background="#1B2EA8"
+                TextColor="White"
+                Grid.Column="2"
+                Text="Cadastro Funcionários"
+                Grid.Row="1"
+                Margin="30"
+                Clicked="OnCadastroFuncionariosClicked"
+                FontFamily="sans serif"
+                 HeightRequest="50"
+                WidthRequest="300"
+                 CornerRadius="30"
+                />
+    </Grid>
 </ContentPage>
+
