@@ -24,14 +24,14 @@ namespace Projeto_Mathias
         {
             // Lógica para quando o botão "Cadastro" for clicado
             DisplayAlert("Cadastro", "Cadastro Button Clicked", "OK");
-			await Navigation.PushAsync(new CadastroFornecedorPage());
+			await Navigation.PushAsync(new login());
         }
 
         private async void OnTelaInicialClicked(object sender, EventArgs e)
         {
             // Lógica para quando o botão "Tela Inicial" for clicado
             DisplayAlert("Tela Inicial", "Tela Inicial Button Clicked", "OK");
-            await Navigation.PushAsync(new gerenciamentoEstoque());
+            await Navigation.PushAsync(new gerenciamentoDeMaterial());
         }
 
         private void OnAdicionarDividasClicked(object sender, EventArgs e)

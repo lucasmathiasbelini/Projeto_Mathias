@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Mathias.login"
+             BackgroundColor="#4D4D4D"
+             Title="Cadastro">
+
+    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+        
+        <!-- Título -->
+        <Label Text="CADASTRO" 
+               HorizontalOptions="Center"
+               FontSize="24"
+               TextColor="White"
+               BackgroundColor="#D3D3D3"
+               Padding="10,0"
+               WidthRequest="300"
+               HeightRequest="50"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+        <!-- Entrada de Email -->
+        <Entry Placeholder="Email"
+               FontSize="18"
+               HeightRequest="50"
+               BackgroundColor="White"
+               TextColor="Black"/>
+
+        <!-- Entrada de Senha -->
+        <Entry Placeholder="Senha"
+               FontSize="18"
+               IsPassword="True"
+               HeightRequest="50"
+               BackgroundColor="White"
+               TextColor="Black"/>
+
+        <!-- Botões de Esqueci a senha e Já tenho conta -->
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Esqueceu a senha"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="35"
+                    WidthRequest="150"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="Tenho uma conta"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="35"
+                    WidthRequest="150"
+                    HorizontalOptions="EndAndExpand"/>
+        </HorizontalStackLayout>
+
+        <!-- Botão Cadastrar-se -->
+        <Button Text="Cadastrar-se"
+                BackgroundColor="#0000FF"
+                TextColor="White"
+                FontSize="16"
+                HeightRequest="40"
+                WidthRequest="200"
+                HorizontalOptions="Center"/>
+
+        <!-- Botões de Login com Google e Facebook -->
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Google"
+                    BackgroundColor="#0000FF"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="35"
+                    WidthRequest="120"
+                    ImageSource="google_icon.png"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="Facebook"
+                    BackgroundColor="#0000FF"
+                    TextColor="White"
+                    FontSize="12"
+                    HeightRequest="35"
+                    WidthRequest="120"
+                    ImageSource="facebook_icon.png"
+                    HorizontalOptions="EndAndExpand"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
