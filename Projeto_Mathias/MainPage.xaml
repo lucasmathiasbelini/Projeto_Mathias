@@ -4,7 +4,7 @@
              x:Class="Projeto_Mathias.MainPage">
 
     <Grid>
-     
+     <Grid Background="#1b2838">
         <!-- Define Rows and Columns -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -22,7 +22,7 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <Button Background="#1B2EA8"
+        <Button Background="#0597F2"
                 TextColor="White"
                 Text="Cadastro fornecedor"
                 Grid.Column="3"
@@ -32,24 +32,22 @@
                 FontFamily="sans serif"
                 HeightRequest="50"
                 WidthRequest="300"
-                CornerRadius="30"
-                
-                />
+                CornerRadius="7"/>
                
-        <Button Background="#1B2EA8"
+        <Button Background="#0597F2"
                 TextColor="White"
                 Grid.Column="2"
                 Text="Login"
-                Grid.Row="1"
-                Margin="30"
+                Grid.Row="3"
+                Margin="520,40"
                 Clicked="OnLoginClicked"
                 FontFamily="sans serif"
                  HeightRequest="50"
                 WidthRequest="300"
-                 CornerRadius="30"
+                 CornerRadius="7"
                 />
 
-        <Button Background="#1B2EA8"
+        <Button Background="#0597F2"
                 TextColor="White"
                 Grid.Column="4"
                 Text="Gerenciamento fornecedor"
@@ -59,23 +57,23 @@
                 FontFamily="sans serif"
                  HeightRequest="50"
                 WidthRequest="300"
-                 CornerRadius="30"
+                 CornerRadius="7"
                 />
 
-        <Button Background="#1B2EA8"
+        <Button Background="#0597F2"
                 TextColor="White"
-                Grid.Column="0"
-                Text="Tela Inicial"
-                Grid.Row="4"
+                Grid.Column="1"
+                Text="Gerenciamento estoque"
+                Grid.Row="0"
                 Margin="30"
                 Clicked="OnTelaInicialClicked"
                 FontFamily="sans serif"
                  HeightRequest="50"
                 WidthRequest="300"
-                 CornerRadius="30"
+                 CornerRadius="7"
                 />
 
-        <Button Background="#1B2EA8"
+        <Button Background="#0597F2"
                 TextColor="White"
                 Grid.Column="1"
                 Text="Adicionar Dívidas"
@@ -85,11 +83,11 @@
                 FontFamily="sans serif"
                  HeightRequest="50"
                 WidthRequest="300"
-                 CornerRadius="30"
+                 CornerRadius="7"
                 />
         
         <Button 
-                Background="#1B2EA8"
+                Background="#0597F2"
                 TextColor="White"
                 Grid.Column="2"
                 Text="Cadastro Funcionários"
@@ -99,8 +97,9 @@
                 FontFamily="sans serif"
                  HeightRequest="50"
                 WidthRequest="300"
-                 CornerRadius="30"
+                 CornerRadius="7"
                 />
+    </Grid>
     </Grid>
 </ContentPage>
 
