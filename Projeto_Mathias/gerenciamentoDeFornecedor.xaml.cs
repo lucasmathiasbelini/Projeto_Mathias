@@ -40,31 +40,19 @@ public partial class GerenciamentoDeFornecedor : ContentPage
 
     ///*****************************************************************************************///
     /// <summary> Classe para definir a avaliação de desempenho </summary>
-    public void setAvaliacaoDesempenho(String avaliacaoDesempenho)
-    {
-        this.avaliacaoDesempenho = avaliacaoDesempenho;
-    }
+   
 
     ///*****************************************************************************************///
     /// <summary> Classe para obter a avaliação de desempenho </summary>
-    public String getAvaliacaoDesempenho()
-    {
-        return this.avaliacaoDesempenho;
-    }
+
 
     ///*****************************************************************************************///
     /// <summary> Classe para definir a análise </summary>
-    public void setAnalisar(String analisar)
-    {
-        this.analisar = analisar;
-    }
+ 
 
     ///*****************************************************************************************///
     /// <summary> Classe para obter a análise </summary>
-    public String getAnalisar()
-    {
-        return this.analisar;
-    }
+   
 
     private void OnGerenciamentoFornecedorClicked(object sender, EventArgs args)
     {

@@ -11,10 +11,16 @@
                        FontSize="24"
                        HorizontalOptions="Center"
                        VerticalOptions="Start"/>
-
+        <StackLayout>
                 <!-- Dropdown for nome -->
+                <Label Text="Name"
+                       FontSize="18"
+                       VerticalOptions="Start"
+                       Margin="0,20,0,0"/>
 
-
+                <Entry x:Name="CUDEURUBU"
+                        HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
                 <!-- Label for Materiais fornecidos -->
                 <Label Text="Materiais fornecidos"
                        FontSize="18"
