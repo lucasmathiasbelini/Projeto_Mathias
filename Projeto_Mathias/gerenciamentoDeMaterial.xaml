@@ -46,7 +46,9 @@
             <!-- Confirmar button -->
             <Button Text="Confirmar"
                     VerticalOptions="End"
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="Center"
+                       Clicked="botao2"
+                     />
 
             <!-- Editar materiais link -->
             <Button Text="editar materiais"

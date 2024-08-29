@@ -37,6 +37,7 @@
         <!-- Botões de Esqueci a senha e Já tenho conta -->
         <HorizontalStackLayout Spacing="10">
             <Button Text="Esqueceu a senha"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                     BackgroundColor="Black"
                     TextColor="White"
                     FontSize="12"
@@ -59,7 +60,9 @@
                 FontSize="16"
                 HeightRequest="40"
                 WidthRequest="200"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                 Clicked="botao1"
+                 />
 
         <!-- Botões de Login com Google e Facebook -->
         <HorizontalStackLayout Spacing="10">
@@ -69,7 +72,6 @@
                     FontSize="12"
                     HeightRequest="35"
                     WidthRequest="120"
-                    ImageSource="google_icon.png"
                     HorizontalOptions="StartAndExpand"/>
             <Button Text="Facebook"
                     BackgroundColor="#0000FF"
@@ -77,8 +79,8 @@
                     FontSize="12"
                     HeightRequest="35"
                     WidthRequest="120"
-                    ImageSource="facebook_icon.png"
-                    HorizontalOptions="EndAndExpand"/>
+                    HorizontalOptions="EndAndExpand"
+                    />
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

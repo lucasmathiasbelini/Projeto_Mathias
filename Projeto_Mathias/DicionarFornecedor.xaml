@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto_Mathias.GerenciamentoDeFornecedor"
+             Title="Gerenciamento de fornecedor">
+
+       <Grid>
+              <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="Auto"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="Auto"/>
+              </Grid.ColumnDefinitions>
+
+              <Grid.RowDefinitions>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="Auto"/>
+              </Grid.RowDefinitions>
+
+              <Button Clicked="SelecionarNaTelaFuncionarios"
+                      Text="Adicionar"
+                      FontSize="20"
+                      HorizontalOptions="Center"
+                      VerticalOptions="CenterAndExpand"
+                      Margin="40,0,40,40"
+                      Grid.Row="1"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      BackgroundColor="Black"/>
+
+              <Button Text="Voltar"
+                      Clicked="Voltar"
+                      FontSize="20"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Margin="40,0,40,40"
+                      Grid.Row="1"
+                      Grid.Column="4"
+                      Grid.ColumnSpan="2"
+                      BackgroundColor="Black"/>
+
+              <Label Text="Funcionarios"
+                     FontSize="50"
+                     Margin="40,0,40,40"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     Grid.Row="0"
+                     Grid.RowSpan="2"
+                     Grid.Column="1"
+                     Grid.ColumnSpan="4"/>
+
+              <ListView x:Name="ListaClientes"
+                        HasUnevenRows="True"
+                        ItemSelected="QuandoSelecionarUmItemNaLista"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill"
+                        Grid.Row="2"
+                        Grid.RowSpan="4"
+                        Grid.ColumnSpan="6">
+
+
+                     <ListView.ItemTemplate>
+                            <DataTemplate>
+                                   <ViewCell>
+
+                                          <VerticalStackLayout Margin="47"
+                                                               BackgroundColor="LightGray"
+                                                               HorizontalOptions="FillAndExpand"
+                                                               VerticalOptions="FillAndExpand"
+                                                               Grid.Row="2"
+                                                               Grid.RowSpan="4"
+                                                               Grid.ColumnSpan="6">
+
+                                   
+                                                 <Label Text="{Binding Id}"
+                                                        FontSize="15"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Center"
+                                                        Grid.ColumnSpan="3"
+                                                        Grid.RowSpan="3"/>
+
+                                                 <Label Text="{Binding Nome}"
+                                                        FontSize="15"
+                                                        Margin="20"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Start"
+                                                        Grid.ColumnSpan="3"
+                                                        Grid.RowSpan="3"/>
+
+                                               
+
+                                                 <Label Text="{Binding Id}"
+                                                        FontSize="15"
+                                                        Margin="20"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Start"
+                                                        Grid.ColumnSpan="3"/>
+
+                                                 <Label Text="{Binding material}"
+                                                        FontSize="15"
+                                                        Margin="20"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Start"
+                                                        Grid.ColumnSpan="3"/>
+
+
+                                          </VerticalStackLayout>
+                                   </ViewCell>
+                            </DataTemplate>
+                     </ListView.ItemTemplate>
+              </ListView>
+       </Grid>
+
+</ContentPage>

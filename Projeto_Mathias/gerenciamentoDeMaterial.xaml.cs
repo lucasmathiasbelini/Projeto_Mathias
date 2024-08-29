@@ -9,10 +9,14 @@ namespace Projeto_Mathias
             InitializeComponent();
         }
 
-        private void OnEditarMateriaisClicked(object sender, EventArgs e)
+        public void botao2(object sender, EventArgs e)
         {
-            // Navegar para a página de edição de materiais
-            // Navigation.PushAsync(new EditarMateriaisPage());
+            Application.Current.MainPage = new GerenciamentoDeFornecedor();
+        }
+
+        public void OnEditarMateriaisClicked(object sender, EventArgs e)
+        {
+            //aaaaaaaaaaa
         }
     }
 }

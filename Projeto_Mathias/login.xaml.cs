@@ -8,11 +8,10 @@ namespace Projeto_Mathias
         {
             InitializeComponent();
         }
-
         // Aqui você pode adicionar manipuladores de eventos para os botões
-        private void OnEsqueceuSenhaClicked(object sender, EventArgs e)
+        public void botao1(object sender, EventArgs e)
         {
-            // Ação ao clicar em "Esqueceu a senha"
+            Application.Current.MainPage = new gerenciamentoDeMaterial();
         }
 
         private void OnTenhoUmaContaClicked(object sender, EventArgs e)
