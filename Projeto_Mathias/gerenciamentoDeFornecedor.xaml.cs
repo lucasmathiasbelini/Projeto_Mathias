@@ -4,12 +4,12 @@ using Microsoft.Maui.Controls;
 using Projeto_Mathias.Modelos;
 
 namespace Projeto_Mathias;
-public partial class GerenciamentoDeFornecedor : ContentPage
+public partial class gerenciamentoDeFornecedor : ContentPage
 {
     Cu cu;
     CuControle cuControle;
 
-    public GerenciamentoDeFornecedor()
+    public gerenciamentoDeFornecedor()
     {
         InitializeComponent();
         cu = new Cu();

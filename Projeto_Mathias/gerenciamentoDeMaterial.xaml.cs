@@ -11,7 +11,7 @@ namespace Projeto_Mathias
 
         public void botao2(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new GerenciamentoDeFornecedor();
+            Application.Current.MainPage = new gerenciamentoDeFornecedor();
         }
 
         public void OnEditarMateriaisClicked(object sender, EventArgs e)

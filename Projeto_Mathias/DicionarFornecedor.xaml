@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Projeto_Mathias.GerenciamentoDeFornecedor"
+             x:Class="Projeto_Mathias.DicionarFornecedor"
              Title="Gerenciamento de fornecedor">
 
        <Grid>
@@ -93,14 +93,6 @@
                                                         Grid.ColumnSpan="3"
                                                         Grid.RowSpan="3"/>
 
-                                               
-
-                                                 <Label Text="{Binding Id}"
-                                                        FontSize="15"
-                                                        Margin="20"
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Start"
-                                                        Grid.ColumnSpan="3"/>
 
                                                  <Label Text="{Binding material}"
                                                         FontSize="15"
