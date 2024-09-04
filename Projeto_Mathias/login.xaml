@@ -35,25 +35,8 @@
                TextColor="Black"/>
 
         <!-- Botões de Esqueci a senha e Já tenho conta -->
-        <HorizontalStackLayout Spacing="10">
-            <Button Text="Esqueceu a senha"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    FontSize="12"
-                    HeightRequest="35"
-                    WidthRequest="150"
-                    HorizontalOptions="StartAndExpand"/>
-            <Button Text="Tenho uma conta"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    FontSize="12"
-                    HeightRequest="35"
-                    WidthRequest="150"
-                    HorizontalOptions="EndAndExpand"/>
-        </HorizontalStackLayout>
-
         <!-- Botão Cadastrar-se -->
+        
         <Button Text="Cadastrar-se"
                 BackgroundColor="#0000FF"
                 TextColor="White"
@@ -65,23 +48,6 @@
                  />
 
         <!-- Botões de Login com Google e Facebook -->
-        <HorizontalStackLayout Spacing="10">
-            <Button Text="Google"
-                    BackgroundColor="#0000FF"
-                    TextColor="White"
-                    FontSize="12"
-                    HeightRequest="35"
-                    WidthRequest="120"
-                    HorizontalOptions="StartAndExpand"/>
-            <Button Text="Facebook"
-                    BackgroundColor="#0000FF"
-                    TextColor="White"
-                    FontSize="12"
-                    HeightRequest="35"
-                    WidthRequest="120"
-                    HorizontalOptions="EndAndExpand"
-                    />
-        </HorizontalStackLayout>
 
     </VerticalStackLayout>
 

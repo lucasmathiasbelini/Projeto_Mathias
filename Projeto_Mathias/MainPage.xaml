@@ -73,32 +73,8 @@
                  CornerRadius="7"
                 />
 
-        <Button Background="#0597F2"
-                TextColor="White"
-                Grid.Column="1"
-                Text="Adicionar Dívidas"
-                Grid.Row="5"
-                Margin="30"
-                Clicked="OnAdicionarDividasClicked"
-                FontFamily="sans serif"
-                 HeightRequest="50"
-                WidthRequest="300"
-                 CornerRadius="7"
-                />
-        
-        <Button 
-                Background="#0597F2"
-                TextColor="White"
-                Grid.Column="2"
-                Text="Cadastro Funcionários"
-                Grid.Row="1"
-                Margin="30"
-                Clicked="OnCadastroFuncionariosClicked"
-                FontFamily="sans serif"
-                 HeightRequest="50"
-                WidthRequest="300"
-                 CornerRadius="7"
-                />
+       
+    
     </Grid>
     </Grid>
 </ContentPage>

@@ -1,33 +1,35 @@
+using Controles;
 using Microsoft.Maui.Controls;
+using Projeto_Mathias.Modelos;
 
 namespace Projeto_Mathias
 {
     public partial class CadastroFornecedorPage : ContentPage
     {
+
+        public ForncedorControle forncedorControle = new ForncedorControle();
+        public Modelos.Fornecedor fornecedor{get; set;}
+
         public CadastroFornecedorPage()
         {
             InitializeComponent();
         }
 
-        private async void OnCadastrarClicked(object sender, EventArgs e)
+        private void OnCadastrarClicked(object sender, EventArgs e)
         {
             // Lógica para cadastro do fornecedor
-            string nomeEmpresa = NomeEmpresaEntry.Text;
-            string cnpj = CNPJEntry.Text;
-            string departamento = DepartamentoEntry.Text;
-            string pais = PaisEntry.Text;
-            string cidade = CidadeEntry.Text;
-            string cep = CEPEntry.Text;
-            string telefone = TelefoneEntry.Text;
+            fornecedor.Nome = NomeEmpresaEntry.Text;
+            fornecedor.Cnpj= CNPJEntry.Text;
+            fornecedor.Telefone = DepartamentoEntry.Text;
 
             // Adicionar lógica para salvar os dados
-            await DisplayAlert("Cadastro", "Fornecedor cadastrado com sucesso!", "OK");
+            
         }
 
         private async void OnVoltarClicked(object sender, EventArgs e)
         {
             // Lógica para voltar à tela anterior
-            await Navigation.PopAsync();
+              Application.Current.MainPage = new  MainPage();
         }
     }
 }

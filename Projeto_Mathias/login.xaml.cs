@@ -9,9 +9,10 @@ namespace Projeto_Mathias
             InitializeComponent();
         }
         // Aqui você pode adicionar manipuladores de eventos para os botões
+       
         public void botao1(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new gerenciamentoDeMaterial();
+            Application.Current.MainPage = new gerenciamentoDeFornecedor();
         }
 
         private void OnTenhoUmaContaClicked(object sender, EventArgs e)

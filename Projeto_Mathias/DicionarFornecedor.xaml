@@ -94,7 +94,7 @@
                                                         Grid.RowSpan="3"/>
 
 
-                                                 <Label Text="{Binding material}"
+                                                 <Label Text="{Binding Cnpj}"
                                                         FontSize="15"
                                                         Margin="20"
                                                         HorizontalOptions="Center"
